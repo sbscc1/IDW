@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Añadir Equipo</title>
     <style>
-        html { margin: 0; padding: 20px; min-height: 100vh; display: flex; justify-content: center; align-items: center; font-family: 'Candara'; box-sizing: border-box; background-color: #134b86; }
+        html {margin: 0; padding: 20px; min-height: 100vh; display: flex; justify-content: center; align-items: center; font-family: 'Candara'; box-sizing: border-box; background-color: #134b86; }
         html::after { content: ""; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0); backdrop-filter: blur(0px); pointer-events: none; transition: all 0.4s ease; z-index: 0; }
         html:has(input:focus, select:focus)::after { background: rgba(0, 0, 0, 0.2); backdrop-filter: blur(4px); }
         body { position: relative; z-index: 1; width: 100%; max-width: 500px; margin: auto; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 15px 35px rgba(0,0,0,0.25); display: flex; flex-direction: column; box-sizing: border-box; }
@@ -27,19 +27,18 @@
 <body>
     <h1>Añadir Equipo <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/UAS_logo.png" alt="" width="80px" height="80px" style="vertical-align: middle;"></h1>
     
-    <h3>Nombre del equipo:</h3>
-    <input type="text" placeholder="Ej. Proyector Epson, Laptop Dell...">
-    
     <h3>Número de Serie / Inventario:</h3>
     <input type="text" placeholder="Ej. UAS-2024-001">
+
+    <h3>Nombre del equipo:</h3>
+    <input type="text" placeholder="Ej. Proyector Canon">    
     
-    <h3>Categoría:</h3>
+    <h3>Tipo de equipo:</h3>
     <select name="categoria" id="categoria">
-        <option value="computo">Cómputo</option>
-        <option value="audiovisual">Audiovisual</option>
-        <option value="laboratorio">Laboratorio</option>
-        <option value="topografia">Topografía</option>
-        <option value="otros">Otros</option>
+        <option value="computo">Proyector</option>
+        <option value="audiovisual">Extensión</option>
+        <option value="laboratorio">Adaptador</option>
+        <option value="topografia">Mouse</option>
     </select>
     
     <h3>Estado del equipo:</h3>
@@ -59,4 +58,5 @@
     
     <a href="index.html" class="back-link">Volver al menú principal</a>
 </body>
+
 </html>
