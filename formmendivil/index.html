@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Principal</title>
+    <style>
+        html {
+            margin: 0; padding: 20px; min-height: 100vh;
+            display: flex; justify-content: center; align-items: center;
+            font-family: 'Candara'; box-sizing: border-box;
+            background-color: #134b86;
+        }
+        body {
+            position: relative; z-index: 1; width: 100%; max-width: 500px;
+            margin: auto; background: white; padding: 40px;
+            border-radius: 15px; box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+            display: flex; flex-direction: column; box-sizing: border-box;
+        }
+        h1 { text-align: center; color: #333; }
+        p { text-align: center; color: #666; margin-bottom: 30px; }
+        
+        /* Estilo de enlace convertido en botón */
+        .btn-link {
+            margin-top: 15px; padding: 15px; font-size: 16px;
+            font-weight: 600; color: white; background-color: #8eb9e6;
+            border-radius: 8px; text-align: center; text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            text-transform: uppercase; letter-spacing: 1px; display: block;
+        }
+        .btn-link:hover {
+            background-color: #8ee6bb; transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(142, 230, 187, 0.5);
+        }
+        .btn-link:active {
+            transform: translateY(0); box-shadow: 0 2px 5px rgba(142, 230, 187, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema UAS <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/UAS_logo.png" alt="UAS Logo" width="80px" height="80px" style="vertical-align: middle;"></h1>
+
+    <a href="prestamo.html" class="btn-link">Solicitar prestamo</a>
+    <a href="alumno.html" class="btn-link">Alumno</a>
+    <a href="equipo.html" class="btn-link">Añadir equipo</a>
+</body>
+</html>

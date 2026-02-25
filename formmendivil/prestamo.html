@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CervantesCastroSebastian_15</title>
+    <title>prestamos</title>
     <style>
         
         html {
@@ -137,10 +137,12 @@
             transform: translateY(0);
             box-shadow: 0 2px 5px rgba(142, 230, 187, 0.5);
         }
+        .back-link { text-align: center; margin-top: 15px; font-size: 14px; color: #134b86; text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
-    <h1>Preztamos was<img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/UAS_logo.png" alt="" width="100px" height="100px"></h1>
+    <h1>Solicitar prestamo <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/UAS_logo.png" alt="" width="80px" height="80px" style="vertical-align: middle;"></h1>
     <h3>Nombre(s):</h3>
     <input type="text">
     
@@ -162,12 +164,6 @@
     <h3>Grupo</h3>
     <input type="text" name="grupo" id="grupo">
     
-    <h3>Alumno/Profesor:</h3>
-    <div>
-        <input type="radio" name="ap" id="alumno"><label for="alumno">Alumno</label>
-        <input type="radio" name="ap" id="profe"><label for="profe">Profesor</label>
-    </div>
-    
     <h3>Prestamo</h3>
     <input type="text">
     
@@ -181,5 +177,6 @@
     <input type="file" name="firma" id="firma">
     
     <button>Enviar</button>
+    <a href="index.html" class="back-link">Volver al menú principal</a>
 </body>
 </html>
